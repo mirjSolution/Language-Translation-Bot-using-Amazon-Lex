@@ -149,7 +149,7 @@ We have setup the conversation flow of our chatbot. Next, we will proceed to cre
 
 ---
 
-➡️ **Final Result:** _(Insert screenshot or description of completed chatbot)_
+➡️ **Final Result:**
 
 ![Output](Images/output.png)
 
