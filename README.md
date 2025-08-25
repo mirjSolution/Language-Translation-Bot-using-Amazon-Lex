@@ -1,19 +1,5 @@
 # 🌐 Building a Language Translation Bot using Amazon Lex
 
-## Table of Contents
-
-1.  [Project Overview ☁️](#project-overview-%E2%98%81%EF%B8%8F)
-2.  [Create an Empty Chatbot 🤖](#create-an-empty-chatbot-%F0%9F%A4%96)
-3.  [Specify Intents and Slots 🎯](#specify-intents-and-slots-%F0%9F%8E%AF)
-4.  [Specify Fulfilment ⚡](#specify-fulfilment-%E2%9A%A1)
-5.  [Create an IAM Role 🔐](#create-an-iam-role-%F0%9F%94%90)
-6.  [Create a Lambda Function 🖥️](#create-a-lambda-function-%F0%9F%96%A5%EF%B8%8F)
-7.  [Test the Lambda Function 🧪](#test-the-lambda-function-%F0%9F%A7%AA)
-8.  [Test the Chatbot 💬](#test-the-chatbot-%F0%9F%92%AC)
-9.  [Conclusion & Clean-up ✅](#conclusion--clean-up-%E2%9C%85)
-
----
-
 ## Project Overview ☁️
 
 In this project, we'll be building a **language translation bot using Amazon Lex**.
@@ -48,20 +34,6 @@ In this project, we'll be building a **language translation bot using Amazon Lex
 
 ---
 
-## Create an Empty Chatbot 🤖
-
-1.  Login to AWS Management Console and navigate to **Amazon Lex**.
-2.  Click **Create Bot** → **Create a blank bot**.
-3.  Enter a **bot name** and **description**.
-4.  For **IAM role**, choose **Create a role with basic Amazon Lex permissions**.
-5.  Choose **No** for COPPA, leave other defaults, click **Next**.
-6.  Select **language** and **voice interaction module**.
-7.  Keep **Intent classification confidence threshold** default, click **Done**.
-
-> Your empty chatbot is now created and ready for intent configuration.
-
----
-
 ## Specify Intents and Slots 🎯
 
 ### Key Terms
@@ -71,9 +43,17 @@ In this project, we'll be building a **language translation bot using Amazon Lex
 - **Slot:** Variable extracted from input
 - **Fulfilment:** Chatbot action/response
 
-**Example:**
+**Example in Amazon Lex Documentation:**
 
-- Pizza chatbot: Intent = order pizza, Utterance = "I want a large pepperoni pizza", Slots = size, toppings, Fulfilment = confirmation message
+- Hotel Booking Chatbot: Intent = BookHotel, Utterance = "book a hotel", "new york", "November", Slots = City, CheckInDate, Fulfillment = confirmation message
+
+![Structure](Images/structure.png)
+
+---
+
+## Now Let's Create our Language Translator Bot
+
+---
 
 ### Steps
 
