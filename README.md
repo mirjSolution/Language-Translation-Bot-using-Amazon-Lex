@@ -145,9 +145,13 @@ We have setup the conversation flow of our chatbot. Next, we will proceed to cre
 2.  Click **Settings** → choose **Lambda function source**
 3.  Test conversations with phrases to translate into selected languages
 
+![Last](Images/last-step.gif)
+
 ---
 
 ➡️ **Final Result:** _(Insert screenshot or description of completed chatbot)_
+
+![Output](Images/output.png)
 
 ---
 
