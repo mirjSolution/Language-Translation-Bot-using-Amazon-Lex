@@ -99,7 +99,7 @@ We have setup the conversation flow of our chatbot. Next, we will proceed to cre
 
 ---
 
-## Create an IAM Role 🔐
+## Create an IAM Role
 
 1.  From your AWS management console, navigate to IAM from your search bar
 2.  Navigate to roles and Create Role. This role will be used for the Lambda function to provide basic Lambda execution permissions and access to Amazon Translate.
@@ -115,7 +115,7 @@ We have setup the conversation flow of our chatbot. Next, we will proceed to cre
 
 ---
 
-## Create a Lambda Function 🖥️
+## Create a Lambda Function
 
 1.  Navigate to **Lambda** → **Create Function**
 2.  Name the function, choose **Python 3.12 runtime**
@@ -124,11 +124,11 @@ We have setup the conversation flow of our chatbot. Next, we will proceed to cre
 
 5.  Click **Deploy**.
 
-> Code explanation: Input extraction, language mapping, translation, response formatting, error handling.
+![Step-5](Images/step-5.gif)
 
 ---
 
-## Test the Lambda Function 🧪
+## Test the Lambda Function
 
 1.  Click **Test** → **Configure Test Event**
 2.  Use event JSON format:
@@ -137,7 +137,7 @@ We have setup the conversation flow of our chatbot. Next, we will proceed to cre
 
 ---
 
-## Test the Chatbot 💬
+## Test the Chatbot
 
 1.  Navigate to **Intent page** of the chatbot
 2.  Click **Settings** → choose **Lambda function source**
@@ -149,7 +149,7 @@ We have setup the conversation flow of our chatbot. Next, we will proceed to cre
 
 ---
 
-## Conclusion & Clean-up ✅
+## Conclusion & Clean-up
 
 ### Conclusion
 
