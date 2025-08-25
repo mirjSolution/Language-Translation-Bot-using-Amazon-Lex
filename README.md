@@ -80,9 +80,22 @@ In this project, we'll be building a **language translation bot using Amazon Lex
     - For example : Instead of ‘I want to translate’ , if user inputs ‘I want to translate to French’ with the language specified in the starting intent itself, it should not ask for the language again by running the language prompt.
     - This will automatically understand the language slot type if already specified and ask for the input text to be translated directly.
 9.  We can also add an Initial response to the initial intent as a feedback message.
-10. Click on Save Intent.
 
 ![Step-2](Images/step-2.gif)
+
+---
+
+## Specify Fulfilment
+
+1. Fulfilment runs the Lambda function to fulfil the intent and informs users about it’s status once it is complete.
+2. Write a suitable prompt on successful fulfilment and in case of a failure.
+3. Click on ‘Advanced Options’ and check ‘Use a Lambda function for fulfilment’. Click on update options.
+4. We can also provide a Closing message after completion of the intent.
+5. Click on ‘Save Intent’.
+
+We have setup the conversation flow of our chatbot. Next, we will proceed to creating the Lambda function for actual serverless text translation.
+
+![Step-3](Images/step-3.gif)
 
 ---
 
@@ -96,8 +109,6 @@ In this project, we'll be building a **language translation bot using Amazon Lex
     - `AWSLambdaBasicExecutionRole`
 
 4.  Enter **role name & description** → **Create Role**
-
-> This role allows Lambda to access Amazon Translate and execute.
 
 ---
 
