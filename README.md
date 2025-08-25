@@ -55,17 +55,14 @@ In this project, we'll be building a **language translation bot using Amazon Lex
 
 ---
 
-### Steps
+### Create an empty chatbot
 
-1.  Create an **Intent**: enter name & description
-2.  Add **sample utterances**
-3.  Create **Slots**:
+1.  Login to your AWS management console and navigate to Amazon Lex from the search bar.
+2.  Click on ‘Create Bot’.
+3.  In the Creation method, go with ‘Create a blank bot’.
+4.  Give the chatbot a suitable name and description.
 
-    - **Language Slot:** slot type `language`, values = French, Japanese, Chinese, Spanish, German, Norwegian
-    - **Text Slot:** slot type `AMAZON.FreeFormInput`, prompt for text to translate
-
-4.  Add additional utterances specifying slot usage
-5.  Optionally add **Initial response** to intent
+![Step-1](Images/step-1.gif)
 
 ---
 
