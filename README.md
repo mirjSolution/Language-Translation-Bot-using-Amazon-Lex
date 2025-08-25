@@ -61,20 +61,28 @@ In this project, we'll be building a **language translation bot using Amazon Lex
 2.  Click on ‘Create Bot’.
 3.  In the Creation method, go with ‘Create a blank bot’.
 4.  Give the chatbot a suitable name and description.
+5.  Click Next and Done.
 
 ![Step-1](Images/step-1.gif)
 
 ---
 
-## Specify Fulfilment ⚡
+## Specify Intents and Slots
 
-1.  Fulfilment triggers the **Lambda function**.
-2.  Add **success/failure prompts**.
-3.  Go to **Advanced Options** → check **Use a Lambda function for fulfilment**.
-4.  Add a **Closing message**.
-5.  Click **Save Intent**.
+1.  In the Intent details, fill in an appropriate Intent name and description.
+2.  Add sample utterances.
+3.  Add custom slots - Click on back to Intents list and navigate to slot type, add Slot type.
+4.  Click on Save slot type.
+5.  Navigate back to the Intents to use this slot type for our slot.
+6.  Click on Add Slot. Give the slot name and choose the slot type ‘language’ previously made. Write the prompt where the chatbot asks for user choice for language translation.
+7.  Create another slot ‘text’ which takes the text to be translated as an input. Choose AMAZON.FreeFormInput as the slot type option and enter a suitable prompt asking for the text to be translated. Click on Add.
+8.  We can add some more utterances specifying the Slots.
+    - For example : Instead of ‘I want to translate’ , if user inputs ‘I want to translate to French’ with the language specified in the starting intent itself, it should not ask for the language again by running the language prompt.
+    - This will automatically understand the language slot type if already specified and ask for the input text to be translated directly.
+9.  We can also add an Initial response to the initial intent as a feedback message.
+10. Click on Save Intent.
 
-> Conversation flow setup is complete. Next: Lambda function.
+![Step-2](Images/step-2.gif)
 
 ---
 
