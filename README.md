@@ -101,14 +101,17 @@ We have setup the conversation flow of our chatbot. Next, we will proceed to cre
 
 ## Create an IAM Role 🔐
 
-1.  Navigate to **IAM** → **Roles** → **Create Role**
-2.  Choose **AWS service** → **Lambda**
-3.  Attach policies:
+1.  From your AWS management console, navigate to IAM from your search bar
+2.  Navigate to roles and Create Role. This role will be used for the Lambda function to provide basic Lambda execution permissions and access to Amazon Translate.
+3.  Select the trusted entity type as AWS service and select Lambda as the use case. Click on Next.
 
     - `TranslateFullAccess`
     - `AWSLambdaBasicExecutionRole`
 
-4.  Enter **role name & description** → **Create Role**
+4.  Click on Next. Enter a suitable name and description for the role and Create Role.
+5.  This role will be used for the Lambda function permission.
+
+![Step-4](Images/step-4.gif)
 
 ---
 
