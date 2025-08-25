@@ -135,6 +135,8 @@ We have setup the conversation flow of our chatbot. Next, we will proceed to cre
 
 3.  Save → Test → Lambda outputs JSON formatted response for Lex
 
+![Step-6](Images/step-6.gif)
+
 ---
 
 ## Test the Chatbot
